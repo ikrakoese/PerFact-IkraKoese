@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Friendship_Test
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string cevap1, cevap2, cevap3, cevap4, cevap5;
+            Console.WriteLine("How well do you know Ikra?");
+            Console.WriteLine("If you answer wrong, close the console and open it again");
+            Console.WriteLine("");
+
+
+            Console.WriteLine("The day we met (D.M.Y):");
+            cevap1 = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            if (cevap1 == "23.03.2016")
+            {
+                Console.WriteLine("My cats' name:");
+            }
+            else
+            {
+                Console.WriteLine("you got it wrong!");
+            }
+            cevap2 = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            if (cevap2 == "misha")
+            {
+                Console.WriteLine("My favorite video-game:");
+            }
+            else
+            {
+                Console.WriteLine("you got it wrong!");
+            };
+            cevap3 = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            if (cevap3 == "valorant")
+            {
+                Console.WriteLine("My favorite author:");
+            }
+            else
+            {
+                Console.WriteLine("you got it wrong!");
+            }
+            cevap4 = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            if (cevap4 == "sylvia plath")
+            {
+                Console.WriteLine("My birthday: ");
+            }
+            else
+            {
+                Console.WriteLine("you got it wrong!");
+            }
+            cevap5 = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            if (cevap5 == "19.03.2003")
+            {
+                Console.WriteLine("Congratulations! You have passed the friendship test");
+            }
+            else
+            {
+                Console.WriteLine("you got it wrong!");
+            }
+            Console.ReadKey();
+        }
+    }
+}
