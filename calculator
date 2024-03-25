@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TheCalculator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                do
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("(-----------------------------------)");
+
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("    Please enter the value of A.     ");
+
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    int A = Convert.ToInt32(Console.ReadLine());
+
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("(-----------------------------------)");
+
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("    Please enter the value of B      ");
+
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    int B = Convert.ToInt32(Console.ReadLine());
+
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("(-----------------------------------)");
+
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("    Please enter an operator    ");
+
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    string C = Console.ReadLine();
+                
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                if (C == "+")
+                    {
+                        Console.WriteLine("The answer is: " + A + B);
+                    }
+                    if (C == "-")
+                    {
+                        Console.Write("The answer is: ");
+                        Console.Write(A - B);
+                    }
+                    if (C == "/")
+                    {
+                        Console.WriteLine("The answer is: " + A / B);
+                    }
+                    if (C == "*")
+                    {
+                        Console.WriteLine("The answer is: " + A * B);
+                    }
+                } while (Console.ReadKey().Key != ConsoleKey.Escape);
+
+            Console.ReadKey();
+            }
+        }
+    }
