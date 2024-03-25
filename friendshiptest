@@ -12,7 +12,7 @@ namespace Friendship_Test
         {
             string cevap1, cevap2, cevap3, cevap4, cevap5;
             Console.WriteLine("How well do you know Ikra?");
-            Console.WriteLine("If you answer wrong, close the console and open it again");
+            Console.WriteLine("If you answer is wrong, close the console and open it again");
             Console.WriteLine("");
 
 
